@@ -1,0 +1,167 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, form, label, input, textarea, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color:#46B1C9; /* Light blue */ /*#FFE8D6; /* Light orange */
+    color: white; /* #1F1F1F; /* Dark gray */
+  }
+  
+  header {
+    background-color: #46B1C9; /* Light blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    /* padding: 10px; */
+  }
+  
+  section {
+    margin-bottom: 10px;
+  }
+  
+  section form {
+    background-color:  #46B1C9;/*#C8E6C9; Light green;*/
+    /* padding: 20px; */
+    border-radius: 10px;
+    width: auto;
+    margin: auto;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .address-line label,
+  .address-line input[type="text"] {
+    display: inline-block;
+    vertical-align: top; /* Align elements vertically */
+    margin-right: 10px; /* Add some spacing between elements */
+  }
+
+  .address-line label {
+    width: auto; /* Adjust width as necessary */
+  }
+  
+  .address-line {
+    margin-bottom: 10px; /* Add some spacing between lines */
+  }
+
+
+  /* .address2 {
+    width:40%
+  } */
+
+  .fetch-data {
+    position:relative;
+    height:30%;
+    width:100%;
+
+    
+  }
+
+  
+  input[type="text"],
+  /* textarea { */
+  .main-container {
+    width: 75%;
+    margin-bottom: 10px;
+    margin:auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    display: flex;
+    justify-content: center; /* Horizontally centers items */
+    align-items: center;  /* Vertically centers items */
+    
+  }
+
+button {
+    background-color: #FF4081; /* Pink */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover{
+      background-color: #D81B60; /* Darker pink */
+    }
+  }
+  
+
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    header h1 {
+      font-size: 24px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    section form {
+      padding: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    header h1 {
+      font-size: 20px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    main {
+      padding: 5px;
+    }
+  
+    section form {
+      padding: 10px;
+    }
+  
+    input[type="submit"] {
+      padding: 8px 16px;
+    }
+  }
+  
